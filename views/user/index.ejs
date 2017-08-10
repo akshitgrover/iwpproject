@@ -1,0 +1,51 @@
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">| WittyFood |</a>&nbsp;&nbsp;
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="/order/uorder">OrderFood</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/user/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/user/ulogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<%if(req.session.err){%>
+<div class="container" style="border-left:7px solid #C0392B;border-radius:7px;background-color:#EC7063;padding:5px"><h3><%=req.session.err.msg %></h3></div>
+<%}%>
+<div class="jumbotron f1">
+  <center>
+    <h1>Welcome To WittyFood!</h1>
+    <h3>Before we talk about us, let’s talk about you. You love to eat. That’s right, we’ve got your number. There’s no need to be shy about it — we love to eat, too. </h3>
+    <a href="/user/signup"><button class="btn btn-primary" style="padding:11px;padding-left:18px;padding-right:18px">Signup</button></a>
+    <a href="/user/ulogin"><button class="btn btn-success" style="padding:11px";padding-left:18px;padding-right:18px">Login</button></a>
+  <center>
+</div>
+<div class="container">
+<div class="page-header">
+<h1>Restaurants With Us</h1>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+  <img src="/images/res1.jpg" style="width:100%;height:100%">
+    <div class="container f2">Heathman, Norway</div>
+  </div>
+  <div class="col-sm-4">
+  <img src="/images/res2.jpg" style="width:100%;height:100%">
+    <div class="container f2">Sydney Gama</div>
+  </div>
+  <div class="col-sm-4">
+  <img src="/images/res3.jpeg" style="width:100%;height:100%">
+    <div class="container f2">Paris Brutio</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+<div class="page-header">
+<h1>About Us</h1>
+</div>
+</div>

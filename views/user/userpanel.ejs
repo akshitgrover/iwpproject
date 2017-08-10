@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/user/index">| WittyFood |</a>&nbsp;&nbsp;
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/user/index">Home</a></li>
+      <li><a href="/order/uorder">OrderFood</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/user/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/user/ulogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<div class="page-header">
+<h2>Welcome To WittyFood!</h2>
+</div>
+<%if(req.session.user.gender=="male"){%>
+<h2>Mr. <%=req.session.user.name%></h2>
+<%}%>
+<%if(req.session.user.gender=="female"){%>
+<h2>Miss <%=req.session.user.name%></h2>
+<%}%>
+<%if(req.session.user.orders.length!=0){%>
+<%=req.session.user.orders%>
+<%}%>
+<%if(req.session.user.orders.length==0){%>
+No Orders So Far!
+<%}%>
+</div>

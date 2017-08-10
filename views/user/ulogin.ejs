@@ -1,0 +1,38 @@
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/user/index">| WittyFood |</a>&nbsp;&nbsp;
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/user/index">Home</a></li>
+      <li><a href="/order/uorder">OrderFood</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/user/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="active"><a href="/user/ulogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<%if(req.session.err){%>
+<div class="container" style="border-left:7px solid #C0392B;border-radius:7px;background-color:#EC7063;padding:5px"><h3><%=req.session.err.msg %></h3></div>
+<%}%>
+<div class="container">
+<div class="page-header">
+<h1>Login</h1>
+</div>
+<form class="formf1" method="post" action="/user/login">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+      <input id="phoneno" type="text" class="form-control" name="phoneno" placeholder="Phone Number">
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div><br>
+    <div class="input-group" style="margin-left:11vw;margin-right:11vw">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+    <input class="form-control btn btn-success" type="submit" value="Login">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+    <input class="form-control btn btn-danger" type="reset" value="Clear">
+    </div>
+</form>

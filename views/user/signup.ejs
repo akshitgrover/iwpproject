@@ -1,0 +1,73 @@
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/user/index">| WittyFood |</a>&nbsp;&nbsp;
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/user/index">Home</a></li>
+      <li><a href="/order/uorder">OrderFood</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="/user/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/user/ulogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<%if(req.session.err){%>
+<div class="container" style="border-left:7px solid #C0392B;border-radius:7px;background-color:#EC7063;padding:5px"><h3><%=req.session.err.msg %></h3></div>
+<%}%>
+<div class="container">
+<div class="page-header">
+<h1>Sigup</h1>
+</div>
+<p>Please Fill The Following Form And Be A Part Of Our Community.</p>
+</div>
+<form class="formf1" method="post" action="/user/create">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+      <input id="phoneno" type="text" class="form-control" name="phoneno" placeholder="Phone Number">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Age</span>
+      <input id="age" type="number" class="form-control" name="age" placeholder="Age">
+    </div>
+    <br>
+    <div class="input-group" style="color:gray">
+    <label class="inline-radio">
+    <input type="radio" name="gender" value="male">Male&nbsp;&nbsp;
+    </label>
+    <label class="inline-radio">
+    <input type="radio" name="gender" value="female">Female
+    </label>
+    </div> 
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+      <input id="block" type="text" class="form-control" name="block" placeholder="Block">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+      <input id="roomno" type="text" class="form-control" name="roomno" placeholder="Room Number">
+    </div><br>
+    <div class="input-group" style="margin-left:11vw;margin-right:11vw">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-ok"></i></span>
+    <input class="form-control btn btn-success" type="submit" value="Signup">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+    <input class="form-control btn btn-danger" type="reset" value="Clear">
+    </div>
+  </form>

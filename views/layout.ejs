@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <style>
+      .f1{
+        color:#E67E22;
+        margin:25px 25px;
+        border-radius:25px;
+      }
+      .f1 h3{
+        color:#2E4053;
+        padding:25px;
+      }
+      .navbar-default {
+      background-color: #E67E22;
+      border-color: #E67E22;
+      }
+      .navbar-default .navbar-brand {
+          color: #000000;
+          font-size:25px;
+      }
+      .navbar-default .navbar-brand:hover,
+      .navbar-default .navbar-brand:focus {
+          color: white;
+      }
+      .navbar-default .navbar-nav > li > a {
+          color: #000000;
+      }
+      .navbar-default .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+          color: #FFFFFF;
+      }
+      .navbar-default .navbar-nav > .active > a,
+      .navbar-default .navbar-nav > .active > a:hover,
+      .navbar-default .navbar-nav > .active > a:focus {
+          color: #000000;
+          background-color: #E7E7E7;
+      }
+      .navbar-default .navbar-nav > .open > a,
+      .navbar-default .navbar-nav > .open > a:hover,
+      .navbar-default .navbar-nav > .open > a:focus {
+          color: #000000;
+          background-color: #D5D5D5;
+      }
+      .page-header{
+        color:#E67E22;
+        border-color:#E67E22;
+        max-width:500px;
+        margin-bottom:50px;
+      }
+      .jumbotron{
+        border:2px solid;
+        border-color:#E67E22;
+        background-color:white;
+      }
+      .col-sm-4{
+        max-height:350px;
+        padding-top:11px;
+      }
+      .row{
+        padding:0px;
+        overflow:hidden;
+        margin-left:7px;
+        margin-right:7px;
+        margin-bottom:25px;
+      }
+      .row > div:hover{
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .f2{
+        color:#E67E22;
+        font-size:21px;
+        padding:11px;
+      }
+      .formf1{
+        margin:72px;
+        margin-top:25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- body %>
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
+        that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different template engine (handlebars, jade, dust, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    
+    <!--TEMPLATES END-->
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
