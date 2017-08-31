@@ -22,12 +22,12 @@
 ```sh
 SILVER JUBILEE TOWER
 ```
-##CORORDINATOR DETAILS:
+## CORORDINATOR DETAILS:
 
->>Vinit bodhwani 
->>vinitbodhwani123@gmail.com 
->>9585588460
->>- - - -
->> shivam chawla 
->>shivam.chawla2015@vit.ac.in 
->>9597818703 
+Vinit bodhwani 
+vinitbodhwani123@gmail.com 
+9585588460
+- - - -
+shivam chawla 
+shivam.chawla2015@vit.ac.in 
+9597818703 
