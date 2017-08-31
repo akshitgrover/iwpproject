@@ -24,7 +24,7 @@ SILVER JUBILEE TOWER
 ```
 ## COORDINATOR DETAILS:
 
-..*Name: Vinit bodhwani
+..*Name: Vinit bodhwani<br/>
 ..*Email: vinitbodhwani123@gmail.com 
 ..*Phone No: 9585588460
 - - - -
