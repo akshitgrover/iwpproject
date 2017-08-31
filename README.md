@@ -23,11 +23,11 @@
 SILVER JUBILEE TOWER
 ```
 ## COORDINATOR DETAILS:
-
-..*Name: Vinit bodhwani<br/>
-..*Email: vinitbodhwani123@gmail.com 
-..*Phone No: 9585588460
-- - - -
-..*Name: Shivam chawla 
-..*Email: shivam.chawla2015@vit.ac.in 
-..*Phone No: 9597818703 
+ 
+Name: Vinit bodhwani<br/>
+Email: vinitbodhwani123@gmail.com<br/> 
+Phone No: 9585588460<br/>
+- - - -<br/>
+Name: Shivam chawla<br/> 
+Email: shivam.chawla2015@vit.ac.in<br/> 
+Phone No: 9597818703 <br/>
