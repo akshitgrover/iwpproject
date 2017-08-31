@@ -27,7 +27,7 @@ SILVER JUBILEE TOWER
 Name: Vinit bodhwani<br/>
 Email: vinitbodhwani123@gmail.com<br/> 
 Phone No: 9585588460<br/>
-- - - -<br/>
+- - - -
 Name: Shivam chawla<br/> 
 Email: shivam.chawla2015@vit.ac.in<br/> 
 Phone No: 9597818703 <br/>
