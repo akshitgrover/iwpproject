@@ -31,7 +31,7 @@ Github: [VINIT BODHWANI](https://github.com/bodhwani)
 Name: Shivam Chawla<br/>
 Github: [SHIVAM CHAWLA](https://github.com/Shivam60)
 - - - -
-Name: Mohd Akram
+Name: Mohd Akram<br/>
 Github: [MOHD AKRAM](https://github.com/mdakram28)
 
 ## COORDINATOR DETAILS:
