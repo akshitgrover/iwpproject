@@ -26,13 +26,13 @@ SILVER JUBILEE TOWER
 ## SESSION BY:
 
 Name: Vinit bodhwani<br/>
-Github: [Github](https://github.com/bodhwani)
+Github: [VINIT BODHWANI](https://github.com/bodhwani)
 - - - -
 Name: Shivam Chawla<br/>
-Github: [Github](https://github.com/Shivam60)
+Github: [SHIVAM CHAWLA](https://github.com/Shivam60)
 - - - -
 Name: Mohd Akram
-Github: [Github](https://github.com/mdakram28)
+Github: [MOHD AKRAM](https://github.com/mdakram28)
 
 ## COORDINATOR DETAILS:
  
