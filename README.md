@@ -22,7 +22,7 @@
 ```sh
 SILVER JUBILEE TOWER
 ```
->CORORDINATOR DETAILS:
+##CORORDINATOR DETAILS:
 
 >>Vinit bodhwani 
 >>vinitbodhwani123@gmail.com 
