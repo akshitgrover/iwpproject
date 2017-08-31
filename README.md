@@ -1,8 +1,8 @@
 # ARTIFICIAL INTELLIGENCE
 
-> The Artificial Intelligence Workshop will primarily focus on the basics of artificial intelligence concepts, how AI is shaping our future and on how AI is being used in automation. The participants will work with the best existing and user friendly industry tools and by the end the of the workshop, the participant will be well sound with the concept applications and various nuances of AI field.
+> The Artificial Intelligence Workshop will primarily focus on the basics of artificial intelligence concepts, how AI is shaping our future and on how AI is being used in automation. The participants will work with the best existing and user friendly industry tools and by the end the of the workshop, the participant will be well sound with the concept applications and various nuances of AI field and will have a decent project which they can show to others.
 
-## LEARN:
+## TOPICS TO BE COVERED:
 ```sh
 * NEURAL NETWORKS
 * IMAGE PROCESSING
@@ -11,10 +11,11 @@
 * TENSORFLOW API
 * NATURAL LANGAUGE PROCESSING
 ```
-## DURATION:
+## TIMINGS:
 
 ```sh
-6 HOURS
+8:00 am - 2:00 pm
+(6 HOURS, Including Break)
 ```
 
 ## VENUE:
@@ -22,6 +23,17 @@
 ```sh
 SILVER JUBILEE TOWER
 ```
+## SESSION BY:
+
+Name: Vinit bodhwani<br/>
+Github: [Github](https://github.com/bodhwani)
+- - - -
+Name: Shivam Chawla<br/>
+Github: [Github](https://github.com/Shivam60)
+- - - -
+Name: Mohd Akram
+Github: [Github](https://github.com/mdakram28)
+
 ## COORDINATOR DETAILS:
  
 Name: Vinit bodhwani<br/>
