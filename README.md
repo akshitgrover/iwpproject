@@ -1,3 +1,1 @@
-# iwp
-
-a [Sails](http://sailsjs.org) application
+## SAILS APP
