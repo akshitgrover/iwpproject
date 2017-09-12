@@ -23,24 +23,36 @@
 <%if(req.session.user.gender=="female"){%>
 <h2>Miss <%=req.session.user.name%></h2>
 <%}%>
-<br><h4>Your Order History:</h4>
-<%if(user.orders.length!=0){%>
-<%for (var i in user.orders){%>
-  <div class="col-sm-4 panel" style="height:250px;border:1px solid gray">
+<br><h4 id="yetord">Orders To Complete:</h4>
+<%if(yetord.length!=0){%>
+<%for (var i in yetord){%>
+  <div class="col-sm-4">
 
-  <span class="f2"><%=parseInt(i)+1%>.</span><p class="f2">Date: <%=user.orders[i].date%><br>
-  Restaurant: <%=user.orders[i].date%><br>
+  <span class="f2"><%=parseInt(i)+1%>.</span><p class="f2">Date: <%=yetord[i].date%><br>
+  Restaurant: <%=yetord[i].date%><br>
   Items:
   <ul style="margin-left:3px;color:#000000;font-size:18px">
-    <%for (var j in user.orders[i].item){%>
-      <li><%=user.orders[i].item[j]%></li>
+    <%for (var j in yetord[i].item){%>
+      <li><%=yetord[i].item[j]%></li>
     <%}%>
   <ul>
   </p>
+  <a href="/order/orderf/<%=yetord[i].id%>/" class="btn btn-danger">Pass</a>
   </div>
 <%}%>
 <%}%>
-<%if(user.orders.length==0){%>
+</div>
+<div class="container">
+<br><br>
+<br><h4 id="compord">Orders Completed:</h4>
+<%if(compord.length!=0){%>
+<%for (var i in compord){%>
+  <div class="col-sm-4">
+    <p class="f2">Order Id: <%=compord[i]%></p>
+  </div>
+<%}%>
+<%}%>
+<%if(compord.length==0){%>
 No Orders So Far!
 <%}%>
 </div>

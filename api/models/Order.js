@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-  	phoneno:{
+  	uphoneno:{
   		type:'string'
   	},
   	restaurant:{

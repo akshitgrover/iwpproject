@@ -12,24 +12,18 @@ module.exports = {
   		type:'string',
   		required:true
   	},
-  	age:{
-  		type:'integer',
-  	},
+    admin:{
+      type:'boolean'
+    },
+    email:{
+      type:'string'
+    },
   	phoneno:{
   		type:'string',
   	},
   	orders:{
   		type:'array',
   		defaultsTo:[]
-  	},
-  	block:{
-  		type:'string',
-  	},
-  	roomno:{
-  		type:'string',
-  	},
-  	gender:{
-  		type:'string',
   	},
   	admin:{
   		type:'boolean',

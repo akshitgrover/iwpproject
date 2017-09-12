@@ -32,7 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/':'UserController.index'
+  '/':'UserController.index',
+  '/order/getmenu/:name':'OrderController.getmenu',
+  '/order/orderfood/:name':'OrderController.orderfood'
 
   /***************************************************************************
   *                                                                          *

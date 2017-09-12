@@ -28,11 +28,16 @@ module.exports = {
 				return res.redirect('/user/index')
 			}
 			data.orders=[];
-			data.admin=false;
+			data.admin=true;
 			data.save();
 			req.session.user=data;
 			req.session.authenticated=true;
+			req.session.admin=false;
 			req.session.flash={msg:"Welcome To WittyFood!"};
+			if(data.admin){
+				req.session.admin=true;
+				return res.redirect('/user/adminpanel');
+			}
 			return res.redirect('/user/userpanel'); 
 		});
 	},
@@ -47,6 +52,11 @@ module.exports = {
 			if(data && req.param('password')==data.password){
 				req.session.user=data;
 				req.session.authenticated=true;
+				req.session.admin=false;
+				if(data.admin){
+					req.session.admin=true;
+					return res.redirect('/user/adminpanel');
+				}
 				return res.redirect('/user/userpanel');
 			}
 			else{
@@ -56,7 +66,43 @@ module.exports = {
 		});
 	},
 	userpanel:function(req,res){
-		res.view();
+		if(req.session.authenticated){
+			User.findOne({phoneno:req.session.user.phoneno},function(err,data){
+				console.log(data);
+				return res.view({user:data});
+			});
+			return;
+		}
+		return res.redirect('/user/ulogin');
+	},
+	adminpanel:function(req,res){
+		if(req.session.admin){
+			Restaurant.findOne({admin:req.session.user.phoneno},function(err,data){
+				if(err){
+					console.log(err);
+					res.redirect('/user/ulogin');
+				}
+				Order.find({restaurant:data.name},function(err,ord){
+					var arr=[];
+					ord.forEach(function(order){
+						if(data.ord.indexOf(order.id)==-1){
+							arr.push(order);
+						}
+					});
+					return res.view({yetord:arr,compord:data.ord});
+				});
+			});
+			return;
+		}
+		return res.redirect('/user/ulogin');
+	},
+	logout:function(req,res){
+		if(req.session.authenticated){
+			delete req.session.authenticated;
+			delete req.session.user;
+			delete req.session.admin;
+		}
+		return res.redirect('/user/ulogin');
 	}
 };
 
